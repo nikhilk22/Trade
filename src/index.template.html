@@ -1,1 +1,22 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Trading Dashboard</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; background:#0f172a; color:#e6eef8; }
+    .card { background:#0b1220; padding:32px; border-radius:12px; box-shadow:0 6px 30px rgba(2,6,23,0.6); text-align:center; width:320px; }
+    .value { font-size:64px; font-weight:700; margin:8px 0; color:#7dd3fc; }
+    .label { font-size:14px; color:#9fb4c9; }
+    .updated { margin-top:12px; font-size:12px; color:#7b8794; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="label">Trades taken last month</div>
+    <div class="value"><!--TRADES_COUNT--></div>
+    <div class="updated">Last updated: <!--UPDATED_AT--></div>
+  </div>
+</body>
+</html>
