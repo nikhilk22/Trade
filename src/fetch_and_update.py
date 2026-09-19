@@ -72,6 +72,7 @@ def render_template(count):
 def main():
     API_KEY = os.environ.get("KITE_API_KEY")
     ACCESS_TOKEN = os.environ.get("KITE_ACCESS_TOKEN")
+    trades = kite.trades()
     if not API_KEY or not ACCESS_TOKEN:
         print("Missing KITE_API_KEY or KITE_ACCESS_TOKEN environment variables.")
         sys.exit(2)
